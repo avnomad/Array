@@ -32,8 +32,11 @@ int main()
 {
 	Array<Array<double>> A(10,f,(unsigned int)5.0);
 	Array<double> v(10,inv,5u);
+	Array<float> u(7,Test::f);
 
 	cout<<v<<endl;
+	cout<<"\n\n";
+	cout<<u<<endl;
 	cout<<"\n\n";
 	Array<Array<double>>::delimiter = '\n';
 	cout<<A<<endl;
