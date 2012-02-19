@@ -13,18 +13,141 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\map function">
+      <UniqueIdentifier>{9146bbab-50f8-48e3-89f3-d3901a2b1459}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\mapped function">
+      <UniqueIdentifier>{a2d5fffc-d513-4412-9f0a-244e64414ea8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Array.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Array.h">
+    <ClInclude Include="Array\Array.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\assignment operator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\basic constructors-destructors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\classic array to class Array constructors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\clone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\compare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\convey constructors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\filter - filtered.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\function operator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\map constructors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\map method base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\map method step.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\maped method.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\part.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\reduce function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\reduce functon with base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\reduced function with base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\reduced function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\relational and equality operators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\resize - resized.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\reverse - reversed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\size - length - capacity - empty.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\sort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\sorted.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\stream insertion operator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\subscript operator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\swap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\map function\base - with index argument.h">
+      <Filter>Header Files\map function</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\map function\base - without index argument.h">
+      <Filter>Header Files\map function</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\map function\step - with 0 index arguments.h">
+      <Filter>Header Files\map function</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\map function\step - with 1 index arguments.h">
+      <Filter>Header Files\map function</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\map function\step - with 2 index arguments.h">
+      <Filter>Header Files\map function</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\map function\step - with 3 index arguments.h">
+      <Filter>Header Files\map function</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\map function\step - with 4 index arguments.h">
+      <Filter>Header Files\map function</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\mapped function\base - with index argument.h">
+      <Filter>Header Files\mapped function</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\mapped function\base - without index argument.h">
+      <Filter>Header Files\mapped function</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\mapped function\step - with 0 index arguments.h">
+      <Filter>Header Files\mapped function</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\mapped function\step - with 1 index arguments.h">
+      <Filter>Header Files\mapped function</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\mapped function\step - with 2 index arguments.h">
+      <Filter>Header Files\mapped function</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\mapped function\step - with 3 index arguments.h">
+      <Filter>Header Files\mapped function</Filter>
+    </ClInclude>
+    <ClInclude Include="Array\mapped function\step - with 4 index arguments.h">
+      <Filter>Header Files\mapped function</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

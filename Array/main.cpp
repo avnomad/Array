@@ -1,46 +1,70 @@
+/*
+ * file main.cpp
+ * created by Nightmare
+ * on 8 Ïêô 2008
+ */
+
 #include <iostream>
 using std::cout;
 using std::cin;
+using std::cerr;
 using std::endl;
 
-#include "Array.h"
-using ASL::DataStructures::Array;
-using ASL::DataStructures::operator <<;
+#include <fstream>
+using std::ofstream;
+
+#include <cstdlib>
+
+#include "Array/Array.h"
+using namespace ASL::DataStructures;
 
 
-class Test
+double dv(double x)
 {
-public:
-	static double f(unsigned int i)
-	{
-		return 1.5*i;
-	}
-};
-
-double inv(unsigned int i,unsigned int j)
-{
-	return 1.0/(i+j+1);
+	return 2*x;
 }
 
-Array<double> f(unsigned int i, unsigned int size)
-{
-	Array<double> v(size,inv,i);
-	return v;
-}
 
 int main()
 {
-	Array<Array<double>> A(10,f,(unsigned int)5.0);
-	Array<double> v(10,inv,5u);
-	Array<float> u(7,Test::f);
+	ofstream outFile("print.txt");
 
-	cout<<v<<endl;
-	cout<<"\n\n";
-	cout<<u<<endl;
-	cout<<"\n\n";
-	Array<Array<double>>::delimiter = '\n';
-	cout<<A<<endl;
+	Array<double> v_5(5,0.1);
+	Array<Array<double> > A_3x2(3,2,0.2);
+	Array<Array<Array<double> > > B_4x3x2(4,3,2,0.3);
+	Array<Array<Array<double> > > C_4x3x2(4,A_3x2);
+	Array<Array<Array<double> > > C_4x4x5(4,4,v_5);
+
+
+
+	// format output
+	Array<Array<double> >::delimiter = "\n";
+	Array<Array<Array<double> > >::delimiter = "\n\n";
+	
+	// print arrays.
+	outFile<<"v_5\n\n"<<v_5<<"\n\n>dv\n\n";
+	v_5.map(dv);
+	outFile<<v_5<<"\n\nA_3x2.\n\n";
+
+	outFile<<A_3x2<<"\n\n>dv\n\n";
+	A_3x2.map(dv);
+	outFile<<A_3x2<<"\n\nB_4x3x2.\n\n";
+
+	outFile<<B_4x3x2<<"\n\n>dv\n\n";
+	B_4x3x2.map(dv);
+	outFile<<B_4x3x2<<"\n\n>C_4x3x2.\n\n";
+
+	outFile<<C_4x3x2<<"\n\n>dv\n\n";
+	C_4x3x2.map(dv);
+	outFile<<C_4x3x2<<"\n\nC_4x4x5.\n\n";
+
+	outFile<<C_4x4x5<<"\n\n>dv\n\n";
+	C_4x4x5.map(dv);
+	outFile<<C_4x4x5<<"\n\n";
+	
 
 	system("PAUSE");
 	return 0;
-}
+} // end function main
+
+

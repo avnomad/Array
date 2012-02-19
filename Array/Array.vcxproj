@@ -61,11 +61,50 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Array.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Array.h" />
+    <ClInclude Include="Array\Array.h" />
+    <ClInclude Include="Array\assignment operator.h" />
+    <ClInclude Include="Array\basic constructors-destructors.h" />
+    <ClInclude Include="Array\classic array to class Array constructors.h" />
+    <ClInclude Include="Array\clone.h" />
+    <ClInclude Include="Array\compare.h" />
+    <ClInclude Include="Array\convey constructors.h" />
+    <ClInclude Include="Array\filter - filtered.h" />
+    <ClInclude Include="Array\function operator.h" />
+    <ClInclude Include="Array\map constructors.h" />
+    <ClInclude Include="Array\map function\base - with index argument.h" />
+    <ClInclude Include="Array\map function\base - without index argument.h" />
+    <ClInclude Include="Array\map function\step - with 0 index arguments.h" />
+    <ClInclude Include="Array\map function\step - with 1 index arguments.h" />
+    <ClInclude Include="Array\map function\step - with 2 index arguments.h" />
+    <ClInclude Include="Array\map function\step - with 3 index arguments.h" />
+    <ClInclude Include="Array\map function\step - with 4 index arguments.h" />
+    <ClInclude Include="Array\map method base.h" />
+    <ClInclude Include="Array\map method step.h" />
+    <ClInclude Include="Array\maped method.h" />
+    <ClInclude Include="Array\mapped function\base - with index argument.h" />
+    <ClInclude Include="Array\mapped function\base - without index argument.h" />
+    <ClInclude Include="Array\mapped function\step - with 0 index arguments.h" />
+    <ClInclude Include="Array\mapped function\step - with 1 index arguments.h" />
+    <ClInclude Include="Array\mapped function\step - with 2 index arguments.h" />
+    <ClInclude Include="Array\mapped function\step - with 3 index arguments.h" />
+    <ClInclude Include="Array\mapped function\step - with 4 index arguments.h" />
+    <ClInclude Include="Array\part.h" />
+    <ClInclude Include="Array\reduce function.h" />
+    <ClInclude Include="Array\reduce functon with base.h" />
+    <ClInclude Include="Array\reduced function with base.h" />
+    <ClInclude Include="Array\reduced function.h" />
+    <ClInclude Include="Array\relational and equality operators.h" />
+    <ClInclude Include="Array\resize - resized.h" />
+    <ClInclude Include="Array\reverse - reversed.h" />
+    <ClInclude Include="Array\size - length - capacity - empty.h" />
+    <ClInclude Include="Array\sort.h" />
+    <ClInclude Include="Array\sorted.h" />
+    <ClInclude Include="Array\stream insertion operator.h" />
+    <ClInclude Include="Array\subscript operator.h" />
+    <ClInclude Include="Array\swap.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
