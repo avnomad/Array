@@ -9,7 +9,7 @@
 template<typename StoredType>
 static inline int comp(register const StoredType *const xData , register const StoredType *const yData , const unsigned int xSize , const unsigned int ySize)	// comp
 {
-	const register unsigned int mSize = ASL::Utility::min(xSize,ySize);	// m for "minimum"
+	const register unsigned int mSize = std::min(xSize,ySize);	// m for "minimum"
 	register unsigned int c;
 
 	for(c = 0 ; c < mSize ; ++c)

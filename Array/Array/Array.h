@@ -10,8 +10,8 @@
 // includes:
 #include <string>
 #include <iostream>
+#include <algorithm>
 
-#include "../utility.h"
 #include "swap.h"
 
 namespace ASL
@@ -41,7 +41,6 @@ class Array
 	friend int compare<>(const Array<StoredType> &x , const unsigned int xStartingSubscript , const unsigned int xLength , const Array<StoredType> &y);
 	friend int compare<>(const Array<StoredType> &x , const Array<StoredType> &y , const unsigned int yStartingSubscript , const unsigned int yLength);
 	friend int compare<>(const Array<StoredType> &x , const unsigned int xStartingSubscript , const unsigned int xLength , const Array<StoredType> &y , const unsigned int yStartingSubscript , const unsigned int yLength);
-	//friend void ASL::Utility::swap<>(Array<StoredType> &x , Array<StoredType> &y);
 public:
 	#include "basic constructors-destructors.h"
 	#include "convey constructors.h"							// scalable
