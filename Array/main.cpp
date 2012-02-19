@@ -7,8 +7,6 @@ using std::endl;
 using ASL::DataStructures::Array;
 using ASL::DataStructures::operator <<;
 
-#include "../../General Purpose/utility.h"
-using ASL::Utility::identity;
 
 class Test
 {
@@ -32,14 +30,13 @@ Array<double> f(unsigned int i, unsigned int size)
 
 int main()
 {
-	//Array<Array<double>> A(10,f,5.0);
-	Array<double> v(10,inv,5);
+	Array<Array<double>> A(10,f,(unsigned int)5.0);
+	Array<double> v(10,inv,5u);
 
 	cout<<v<<endl;
-	//Array<Array<double>>::delimiter = '\n';
-	//cout<<A<<endl;
-
-	
+	cout<<"\n\n";
+	Array<Array<double>>::delimiter = '\n';
+	cout<<A<<endl;
 
 	system("PAUSE");
 	return 0;
