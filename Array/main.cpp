@@ -10,22 +10,8 @@ using std::cin;
 using std::cerr;
 using std::endl;
 
-#include <fstream>
-using std::ofstream;
-
-#include <cstdlib>
-#include <math.h>
-#include <time.h>
-
-#include <vector>
-using std::vector;
-
 #include "Array/Array.h"
 using namespace ASL::DataStructures;
-#include "utility.h"
-using namespace ASL::Utility;
-
-
 
 
 int main()
@@ -36,13 +22,11 @@ int main()
 	Array<int> A(a,6);
 	Array<int> B(b,6);
 
-	cout<<compare(A,B,0,5)<<endl;
+	cout<<compare(A,B)<<endl;	// compare whole arrays
+	cout<<compare(A,B,0,6)<<endl;	// compare A with the subarray of B containing the whole B
+	cout<<compare(A,B,0,5)<<endl;	// compare A with the subarray of B containing the first 5 elements of B
+	cout<<compare(A,B,1,5)<<endl;	// compare A with the subarray of B containing 5 elements starting at index 1
 
-
-
-
-	//system("PAUSE");
+	system("PAUSE");
 	return 0;
 } // end function main
-
-
