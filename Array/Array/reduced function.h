@@ -1,7 +1,2 @@
-/*
- * file reduced function.h
- * created by Nightmare
- * on 08 Οκτ 2008
- */
-
-
+// file reduced function.h
+// created by Nightmare on 08 Οκτ 2008
